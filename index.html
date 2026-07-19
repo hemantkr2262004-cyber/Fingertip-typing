@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Fingertip typing test</h1>
+
+        <!-- Timer -->
+        <div class="top-bar">
+
+            <div class="timer-box">
+                Time :
+                <span id="timer">120</span>s
+            </div>
+
+            <div class="timer-options">
+
+                <button class="time-btn" data-time="15">15s</button>
+                <button class="time-btn" data-time="30">30s</button>
+                <button class="time-btn" data-time="60">60s</button>
+                <button class="time-btn active" data-time="120">120s</button>
+
+            </div>
+
+        </div>
+
+        <!-- Paragraph -->
+        <div class="typing-area">
+
+            <p id="paragraph">
+                Loading paragraph...
+            </p>
+
+        </div>
+
+        <!-- Hidden Input -->
+        <input
+            type="text"
+            id="inputField"
+            autocomplete="off"
+            autofocus
+        >
+
+        <!-- Result -->
+        <div class="result">
+
+            <div>
+                WPM :
+                <span id="wpm">0</span>
+            </div>
+
+            <div>
+                Accuracy :
+                <span id="accuracy">100%</span>
+            </div>
+
+            <div>
+                Mistakes :
+                <span id="mistakes">0</span>
+            </div>
+
+        </div>
+
+        <!-- Restart -->
+        <button id="restartBtn">
+            Restart Test
+        </button>
+
+    </div>
+
+    <script src="paragraphs.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
